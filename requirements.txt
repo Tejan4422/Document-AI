@@ -1,0 +1,11 @@
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-cloud-documentai
+google-cloud-firestore
+google-cloud-bigquery
+vertexai
+requests
+sentence-transformers
+scikit-learn
+numpy
