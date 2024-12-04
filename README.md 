@@ -1,0 +1,71 @@
+# Document AI API Test
+
+This project demonstrates how to use Google Cloud's Document AI API to process and extract information from documents. The code authenticates the user, sends a document to the Document AI API for processing, and displays the extracted entities.
+
+## Prerequisites
+
+- Python 3.6 or higher
+- Google Cloud account with Document AI API enabled
+- Required Python packages (listed in `requirements.txt`)
+
+## Setup
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-username/document-ai-api-test.git
+    cd document-ai-api-test
+    ```
+
+2. **Install the required packages:**
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. **Authenticate with Google Cloud:**
+    - If running in Google Colab, the code will prompt you to authenticate.
+    - If running locally, ensure you have set up your Google Cloud credentials.
+
+## Usage
+
+1. **Update the project ID and processor details in `document_ai_api_test.py`:**
+    ```py
+    project_id = "your-project-id"
+    location = "your-processor-location"
+    processor_id = "your-processor-id"
+    ```
+
+2. **Run the script:**
+    ```sh
+    python document_ai_api_test.py
+    ```
+
+3. **Process the document:**
+    - The script will read a PDF document, encode it in base64, and send it to the Document AI API.
+    - The response will be processed and the extracted entities will be displayed.
+
+## Example
+
+The script processes a document and prints the extracted entities:
+Document processed successfully! Entity: DATE, Value: 2023-10-01 Entity: AMOUNT, Value: $1000 ...
+
+
+## Dependencies
+
+The project relies on the following Python packages:
+- `google-auth`
+- `google-auth-oauthlib`
+- `google-auth-httplib2`
+- `google-cloud-documentai`
+- `google-cloud-firestore`
+- `google-cloud-bigquery`
+- `vertexai`
+- `requests`
+- `sentence-transformers`
+- `scikit-learn`
+- `numpy`
+
+Refer to `requirements.txt` for the complete list of dependencies.
+
+## License
+
+This project is licensed under the MIT License.
